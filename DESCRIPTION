@@ -1,0 +1,24 @@
+Package: AlgalGame
+Title: A reaction-diffusion-taxis model of phytoplankton in the vertical profile
+Version: 0.1
+Authors@R: 
+    person(given = "Shunn",
+           family = "Bi",
+           role = c("aut", "cre"),
+           email = "bishun1994@foxmail.com",
+           comment = c(ORCID = "0000-0002-2668-5808"))
+Description: This packge is mainly the R version of the reaction-diffusion-taxis 
+  model namely Algal Game which is originally proposed by Klausmeier and Litchman (2001).
+  The model was designed based on two essential resources for phytoplanktons: light supplied
+  from above and nutrients supplied from below (sediments). In this packge, the mode is 
+  solved based on pacakges `deSolve`, `ReacTran`, and `rootSolve`. The plot functions are
+  mainly based on `ggplot2`. The default parameters in this package were mainly refered from
+  Klausmeier and Litchman (2002) and Zhou et al. (2019) *(in Chinese)*. This package is 
+  personally for my PhD thesis but I think it is okay for other applications.
+Imports: ReacTran, deSolve, ggplot2 (>= 3.3.2), grDevices, magrittr, metR, 
+  reshape2, rootSolve, stats, stringr, utils, cowplot
+License: GPL-3 + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
