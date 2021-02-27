@@ -35,4 +35,4 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 
-text/
+test/
