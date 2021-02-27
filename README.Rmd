@@ -18,6 +18,8 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![CRAN status](https://www.r-pkg.org/badges/version/AlgalGame)](https://CRAN.R-project.org/package=AlgalGame)
+<!-- [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/bishun945/AlgalGame?branch=master&svg=true)](https://ci.appveyor.com/project/bishun945/AlgalGame) -->
+<!-- [![Travis build status](https://travis-ci.com/bishun945/AlgalGame.svg?branch=master)](https://travis-ci.com/bishun945/AlgalGame) -->
 <!-- badges: end -->
 
 The goal of AlgalGame is to solve the ODEs created by Klausmeier and Litchman (2001) and to simulate algal vertical profiles.
