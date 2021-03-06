@@ -12,6 +12,7 @@ ggimage(
   which_var = "Biomass",
   trans = NULL,
   y.rev = TRUE,
+  add.contour = FALSE,
   contour.text = FALSE,
   depth = NULL,
   sign_var = FALSE

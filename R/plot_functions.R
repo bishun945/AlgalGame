@@ -62,6 +62,7 @@ get_out <- function(out, which_var, depth = NULL) {
 ggimage <- function(out,
                     which_var = "Biomass",
                     trans = NULL, y.rev = TRUE,
+                    add.contour  = FALSE,
                     contour.text = FALSE,
                     depth = NULL, sign_var = FALSE) {
 
@@ -88,17 +89,21 @@ ggimage <- function(out,
 
     p <- ggplot(c_melt, aes(x=times, y=depth, fill = value, z= value)) +
       geom_raster() +
-      geom_contour(color = "black", bins = 10) +
       scale_tran +
       scale_y +
       labs(fill = which_var) +
       theme_bw() +
       coord_cartesian(expand = FALSE)
 
+    if(add.contour) {
+      p <- p + geom_contour(color = "black", bins = 10)
 
-    if(contour.text) {
-      p <- p +  metR::geom_text_contour(size = 4, color = "black",
-                                        label.placement = metR::label_placement_flattest())
+      if(contour.text) {
+        p <- p +
+          metR::geom_text_contour(size = 4, color = "black",
+                                  check_overlap = TRUE,
+                                  label.placement = metR::label_placement_flattest())
+      }
     }
 
   } else {

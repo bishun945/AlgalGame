@@ -29,7 +29,7 @@
 run_model <- function(
   inputs = NULL,
   Ttot = 2, dt = 1e-3,
-  L = 2, N = 50,
+  L = 3, N = 60,
   ini = NULL,
   opt.abg = "Zhou2019",
   plot = TRUE,
@@ -287,8 +287,9 @@ Model <- function(t, state, parms) {
     Movement.adv    <- advection.1D(C = B,
                                     v = vmax * vsign * weight,
                                     # v = -vmax,
-                                    adv.method = "muscl",
+                                    # adv.method = "muscl",
                                     # adv.method = "quick",
+                                    adv.method = "super",
                                     flux.up = 0,
                                     flux.down = 0,
                                     dx = Grid)
