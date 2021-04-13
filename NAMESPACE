@@ -2,6 +2,7 @@
 
 export(get_out)
 export(ggimage)
+export(run_Shiny)
 export(run_model)
 export(show_parms)
 importFrom(ReacTran,advection.1D)

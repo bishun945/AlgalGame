@@ -61,9 +61,9 @@ show_parms()
 #> 3    Iin 1.4e+03                      Incoming light [umol photons m^-2 s^-1]
 #> 4    abg 3.5e+00                     Background attenuation coefficient [1/m]
 #> 5      a 1.0e-04 algal specific attenuation coefficient [m^-1 / (cells / ml)]
-#> 6   vmax 1.0e+00                                         swimming speed [m/d]
+#> 6   vmax 1.2e+00                                         swimming speed [m/d]
 #> 7      r 4.0e-01                                    maximum growth rate [1/d]
-#> 8      m 4.0e-02                                              loss rate [1/d]
+#> 8      m 2.0e-01                                              loss rate [1/d]
 #> 9     KR 1.0e+00                            P half-saturation constant [ug/L]
 #> 10    KI 5.0e+01      light half-saturation constant [umol photons m^-2 s^-1]
 #> 11     Y 1.0e+03                      yield coefficient [cell ml^-1 / (ug/L)]
@@ -72,6 +72,12 @@ show_parms()
 #> 14    Db 1.0e+01      eddy diffusion coefficient for b (same as `DR`) [m^2/d]
 #> 15    Rs 1.0e+00                        minimum nutrient concentration [ug/L]
 #> 16    Is 5.0e+01                 minimum light level [umol photons m^-2 s^-1]
+```
+
+Update in April 13, 2021, a shiny app was generated for visualization.
+
+``` r
+run_Shiny()
 ```
 
 ## References

@@ -61,6 +61,14 @@ The default paramters are shown as follows:
 show_parms()
 ```
 
+
+Update in April 13, 2021, a shiny app was generated for visualization.
+
+```{r eval= FALSE}
+run_Shiny()
+```
+
+
 ## References
 
  + Klausmeier C A, Litchman E. Algal games: The vertical distribution of phytoplankton in poorly mixed water columns\[J\]. Limnology and Oceanography, 2001, 46(8): 1998-2007.
