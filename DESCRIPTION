@@ -2,7 +2,7 @@ Package: AlgalGame
 Title: A reaction-diffusion-taxis model of phytoplankton in the vertical profile
 Version: 0.2
 Authors@R: 
-    person(given = "Shunn",
+    person(given = "Shun",
            family = "Bi",
            role = c("aut", "cre"),
            email = "bishun1994@foxmail.com",
