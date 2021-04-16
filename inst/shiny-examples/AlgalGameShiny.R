@@ -38,6 +38,9 @@ ui <- fluidPage(
   # import shinyjs
   shinyjs::useShinyjs(),
 
+  # import MathJax
+  withMathJax(),
+
   # custom css sytle
   tags$head(
     tags$style(HTML("
@@ -88,7 +91,11 @@ ui <- fluidPage(
 
         tabPanel(
           "Simulation Result",
-          plotOutput("AG", height = "600px")
+          plotOutput("AG", height = "600px"),
+
+          # unit
+          htmlOutput("unit_str")
+
         ),
 
         tabPanel(
@@ -99,16 +106,29 @@ ui <- fluidPage(
 
         tabPanel(
           "References",
+          tags$h4("Materials"),
           tags$div(
             tags$ul(
-              br(),
               tags$li(a("Algal Game manuscript",
                         href = "https://doi.org/10.4319/lo.2001.46.8.1998")),
               br(),
               tags$li(a("Related slide (in Chinese)",
-                        href = "https://bishun945.github.io/presentation20201216/"))
+                        href = "https://bishun945.github.io/presentation20201216/")),
+              br(),
+              tags$li(a("This package",
+                        href = "https://github.com/bishun945/AlgalGame"))
             )
-          )
+          ),
+
+          tags$br(),
+          tags$h4("Installation in your console"),
+          verbatimTextOutput("install"),
+
+          tags$br(),
+          tags$h4("See document for more details"),
+          verbatimTextOutput("use_help")
+
+
         )
 
       )
@@ -170,6 +190,18 @@ server <- function(input, output) {
       shinyjs::enable("download")
     }
   })
+
+  output$install  <- renderPrint({
+    cat("remotes::install_github('bishun945/AlgalGame')")
+  })
+
+  output$use_help <- renderPrint({
+    cat("library(AlgalGame)", "help(run_model)", sep = "\n")
+  })
+
+  output$unit_str <- renderText(
+    "Unit: Biomass [cell/L]; Nutrient [P μg/L]; Light [μmol photons m<sup>-2</sup> s<sup>-1</sup>]"
+    )
 
 }
 

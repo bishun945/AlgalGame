@@ -62,7 +62,7 @@ show_parms()
 ```
 
 
-Update in April 13, 2021, a shiny app was generated for visualization.
+Update in April 13, 2021, a [shiny](https://bishun945.shinyapps.io/AlgalGameShiny/) app was generated for visualization.
 
 ```{r eval= FALSE}
 run_Shiny()

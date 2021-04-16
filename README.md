@@ -74,7 +74,9 @@ show_parms()
 #> 16    Is 5.0e+01                 minimum light level [umol photons m^-2 s^-1]
 ```
 
-Update in April 13, 2021, a shiny app was generated for visualization.
+Update in April 13, 2021, a
+[shiny](https://bishun945.shinyapps.io/AlgalGameShiny/) app was
+generated for visualization.
 
 ``` r
 run_Shiny()

@@ -36,3 +36,4 @@ vignettes/*.pdf
 *.knit.md
 
 test/
+inst/shiny-examples/rsconnect/documents/AlgalGameShiny.R/shinyapps.io/bishun945/AlgalGameShiny.dcf
