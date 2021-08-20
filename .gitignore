@@ -37,3 +37,4 @@ vignettes/*.pdf
 
 test/
 inst/shiny-examples/rsconnect/documents/AlgalGameShiny.R/shinyapps.io/bishun945/AlgalGameShiny.dcf
+.DS_Store
